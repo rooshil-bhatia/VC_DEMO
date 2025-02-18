@@ -1,1 +1,1 @@
-# This is a demo page for SPRING Labs Voice Conversion Model. 
+# This is a demo page for EZ-VC a Voice Conversion Model. 
