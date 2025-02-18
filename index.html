@@ -1,49 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voice Conversion Samples</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        .section { margin-bottom: 30px; }
-        h2 { border-bottom: 2px solid #000; padding-bottom: 5px; }
-        .audio-group { margin-top: 10px; }
-    </style>
+    <title>EZ-VC: Easy Multilingual Voice Conversion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Voice Conversion Samples</h1>
-    
-    <div class="section">
-        <h2>Leading VC Approaches</h2>
-        <div class="audio-group">
-            <h3>Diff VC</h3>
-            <audio controls><source src="diff_vc_sample.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
+    <header>
+        <h1>EZ-VC</h1>
+        <p>Easy Multilingual Voice Conversion</p>
+    </header>
+
+    <section class="introduction">
+        <h2>About EZ-VC</h2>
+        <p>EZ-VC simplifies multilingual voice conversion, enabling easy transformation of voices across different
+            languages.
+            This project aims to provide a user-friendly platform for exploring voice conversion techniques and their
+            applications.</p>
+    </section>
+
+    <section class="audio-samples">
+        <h2>Unseen speaker voice conversion</h2>
+
+        <!-- Row Template (Repeat this for 10 rows) -->
+        <div class="audio-row">
+            <div class="audio-column">
+                <h3>Source Utterance</h3>
+                <div class="audio-container">
+                    <audio controls src="path/to/source1.wav"></audio>
+                </div>
+            </div>
+            <div class="audio-column">
+                <h3>Target Prompt</h3>
+                <div class="audio-container">
+                    <audio controls src="path/to/target1.wav"></audio>
+                </div>
+            </div>
+            <div class="audio-column vc-approaches">
+                <div class="leading-vc">
+                    <h3>Leading VC Approaches</h3>
+                    <div class="vc-item">
+                        <h4>Seed VC</h4>
+                        <div class="audio-container">
+                            <audio controls src="path/to/seed1.wav"></audio>
+                        </div>
+                    </div>
+                    <div class="vc-item">
+                        <h4>KNN VC</h4>
+                        <div class="audio-container">
+                            <audio controls src="path/to/knn1.wav"></audio>
+                        </div>
+                    </div>
+                    <div class="vc-item">
+                        <h4>Vec2Wav2 VC</h4>
+                        <div class="audio-container">
+                            <audio controls src="path/to/vec2wav2_1.wav"></audio>
+                        </div>
+                    </div>
+                    <div class="vc-item">
+                        <h4>Diff-Hier VC</h4>
+                        <div class="audio-container">
+                            <audio controls src="path/to/diffhier1.wav"></audio>
+                        </div>
+                    </div>
+                    <div class="vc-item">
+                        <h4>EZ-VC</h4>
+                        <div class="audio-container">
+                            <audio controls src="path/to/diffhier1.wav"></audio>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="proposed-vc">
+                    <h3>Proposed</h3>
+                    <div class="vc-item">
+                        <h4>EZ-VC</h4>
+                        <div class="audio-container">
+                            <audio controls src="path/to/ezvc1.wav"></audio>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
         </div>
-        <div class="audio-group">
-            <h3>Diff Singer</h3>
-            <audio controls><source src="diff_singer_sample.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
-        </div>
-        <div class="audio-group">
-            <h3>Diff Hier VC</h3>
-            <audio controls><source src="diff_hier_vc_sample.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
-        </div>
-        <div class="audio-group">
-            <h3>EZ-VC</h3>
-            <audio controls><source src="ez_vc_sample.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
-        </div>
-    </div>
-    
-    <div class="section">
-        <h2>Zero-shot VC</h2>
-        <div class="audio-group">
-            <h3>YourTTS</h3>
-            <audio controls><source src="yourtts_sample.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
-        </div>
-        <div class="audio-group">
-            <h3>VALL-E</h3>
-            <audio controls><source src="valle_sample.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
-        </div>
-    </div>
+        <!-- End Row Template -->
+
+    </section>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
