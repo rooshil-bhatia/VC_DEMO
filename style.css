@@ -81,6 +81,7 @@ header p {
     flex: 1;
     padding: 10px;
     min-width: 200px;
+    text-align: center;
 }
 
 .audio-column h3 {
@@ -88,6 +89,8 @@ header p {
     margin-bottom: 10px;
     color: #2980b9;
     font-size: 1.2em;
+    text-align: center;
+    
 }
 
 /* VC Approaches */
@@ -150,19 +153,23 @@ audio::-webkit-media-controls-panel {
 @media (max-width: 768px) {
     .audio-row {
         flex-direction: column;
+        text-align: center;
     }
 
     .audio-column {
         min-width: auto;
+        text-align: center;
     }
 
     .vc-approaches {
         flex-direction: column;
+        text-align: center;
     }
 
     .leading-vc,
     .proposed-vc {
         width: 100%;
         padding: 0;
+        text-align: center;
     }
 }
